@@ -1,0 +1,19 @@
+@keyframes scanline {
+    0% { top: -10%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 110%; opacity: 0; }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 2px var(--color-cyan)); }
+    50% { filter: drop-shadow(0 0 8px var(--color-cyan)); }
+  }
+  
+  .animate-scanline {
+    animation: scanline 3s linear infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
